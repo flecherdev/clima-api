@@ -6,7 +6,7 @@ var geoip = require('geoip-lite')
 const openWeatherLib = new OpenWeatherLib()
 
 class WeatherService {
-    constructor(){
+    constructor() {
         this.dias = 5
     }
 

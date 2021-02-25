@@ -16,9 +16,10 @@ router.get('/location', async (req, res, next) => {
     }
 })
 
-router.get('/current/:city', async (req, res, next) => {
+router.get('/current/:city?', async (req, res, next) => {
     const { city } = req.params 
     try {
+        console.log(city)
         const current = await weatherService.getCurrent(city)
         res.status(200).json({
             data: current,
