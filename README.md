@@ -7,3 +7,4 @@ npm i -S dotenv
 npm i geoip-lite
 npm i public-ip
 npm i axios
+npm i morgan
