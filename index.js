@@ -11,7 +11,7 @@ app.get('/', (req, res, next) => {
     res.send('Hello')
 })
 
-app.use('/api/weather', weatherApiRouter)
+weatherApiRouter(app)
 
 const server = app.listen(3000, () => {
     console.log(`Listening http://localhost:${server.address().port}`)
