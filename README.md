@@ -10,8 +10,8 @@ Para ejecutar el projecto en test: npm t
 - npm i public-ip
 - npm i axios
 - npm i morgan
-
-//test
+## test
 - npm i -D supertest
 - npm i -D should
 - npm i -D mocha
+- npm i -D proxyquire
