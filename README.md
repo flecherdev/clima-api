@@ -1,5 +1,7 @@
 # clima-api
-
+Para ejecutar el projecto en modo dev: npm run dev
+Para ejecutar el proyecto en prod: npm run start
+Para ejecutar el projecto en test: npm t
 # Dependencias
 - npm -i -S express
 - npm i -D nodemon
