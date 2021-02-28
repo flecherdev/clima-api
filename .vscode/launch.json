@@ -16,7 +16,7 @@
             "console": "integratedTerminal",
             "env": {
                 "NODE_ENV": "dev",
-                "PORT": "3000",
+                "PORT": "3001",
                 "TZ": "utc"
             }
         }
