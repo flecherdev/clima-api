@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-
+const { config } = require('./config') 
 const weatherApiRouter = require('./routes/api/weather-router')
 
 // middleware
@@ -13,6 +13,6 @@ app.get('/', (req, res, next) => {
 
 weatherApiRouter(app)
 
-const server = app.listen(3000, () => {
+const server = app.listen(config.port ? config.port : 3000, () => {
     console.log(`Listening http://localhost:${server.address().port}`)
 })
