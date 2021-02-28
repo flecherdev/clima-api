@@ -108,7 +108,7 @@ describe("routes - v1 - forecast", function(){
 
         it('should respond with the object of forecast', function(done){
             request.get('/v1/forecast').end((err, res) => {
-                assert.deepEqual(res.body, {
+                assert.deepStrictEqual(res.body, {
                     data: forecastMock,
                     message: 'weather for forecast'
                 })
